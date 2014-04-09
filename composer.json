@@ -1,0 +1,15 @@
+{
+    "name": "collins/php-jws",
+    "version": "0.1.0",
+    "description": "jws signed requests",
+    "license": "proprietary",
+    "autoload": {
+        "psr-0": {
+            "Collins\\": "src/",
+            "Akita_JOSE_": "lib/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    }
+}
