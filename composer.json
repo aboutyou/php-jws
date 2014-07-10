@@ -1,6 +1,8 @@
 {
     "name": "aboutyou/jws",
     "description": "jws signed requests",
+    "keywords": ["aboutyou"],
+    "homepage": "https://developer.aboutyou.de"
     "license": "MIT",
     "autoload": {
         "psr-0": {
