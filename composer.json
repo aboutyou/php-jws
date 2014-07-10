@@ -1,8 +1,7 @@
 {
-    "name": "collins/php-jws",
-    "version": "0.1.0",
+    "name": "aboutyou/jws",
     "description": "jws signed requests",
-    "license": "proprietary",
+    "license": "MIT",
     "autoload": {
         "psr-0": {
             "Collins\\": "src/",
