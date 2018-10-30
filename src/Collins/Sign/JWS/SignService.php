@@ -39,7 +39,7 @@ class SignService
         $jws = Akita_JOSE_JWS::load($signedData, true);
         if(!$jws) throw new \Exception('could not jws get create');
         $json = $jws->getPayload($signedData);
-        if(!$jws) throw new \Exception('could not jws get payload');
+        if(!$json) throw new \Exception('could not jws get payload');
         $payload = json_decode($json);
         if(is_null($payload)) throw new \Exception('could not jws get json decode');
         $okm = $this->createORMToken(base64_decode($payload->salt),$payload->info);
