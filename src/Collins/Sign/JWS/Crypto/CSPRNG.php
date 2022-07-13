@@ -160,7 +160,7 @@ class CSPRNG
 
             $result = 0;
             for ($x = 0; $x < $numbytes; $x++) {
-                $result = ($result * 256) + ord($data{$x});
+                $result = ($result * 256) + ord($data[$x]);
             }
 
             $result = $result & $mask;
@@ -179,7 +179,7 @@ class CSPRNG
                 return false;
             }
 
-            $result .= self::$alphanum{$data};
+            $result .= self::$alphanum[$data];
         }
 
         return $result;
